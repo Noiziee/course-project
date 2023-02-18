@@ -1,0 +1,24 @@
+// font-size variables
+$h1-font-size: 9rem; // 144px
+$h2-font-size: 2.25rem; // 36px * 1.777 64px / 1.5 24px
+$h3-font-size: 1.875rem; // 30px
+// $h4-font-size: 1.5rem; // 24px
+$font-size-base: 1.125rem; // 18px
+$font-size-sm: 0.875rem; // 14px
+
+// color variables
+$color-base: #2d3033;
+$color-black: #000;
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  color: $color-base;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

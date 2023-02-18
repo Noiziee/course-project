@@ -1,0 +1,23 @@
+{
+  "name": "course-project",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noiziee/course-project.git"
+  },
+  "author": "Dima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noiziee/course-project/issues"
+  },
+  "homepage": "https://github.com/Noiziee/course-project#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
