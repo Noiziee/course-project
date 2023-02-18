@@ -1,5 +1,5 @@
 // Nullstyle
-@import "./reset";
+@import './reset';
 
 // Base
 @import './scaffold';
@@ -7,3 +7,5 @@
 
 
 // Components
+@import './header';
+@import './intro';
