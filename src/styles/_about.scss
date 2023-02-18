@@ -1,0 +1,78 @@
+$component: 'about';
+
+
+.#{$component} {
+  &__inner {
+    @include section-indent;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 58px 0 106px 0;
+  }
+
+  &__col {
+    background-color: #95E1D3;
+  }
+
+  &__col-item {
+    position: relative;
+    transition: all .2s linear;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+      width: 100%;
+      opacity: 0;
+      transition: opacity .2s linear;
+    }
+
+    &:hover {
+      transform: translate(-15px, -15px);
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  &__col-image {
+    display: block;
+    position: relative;
+  }
+
+  &__col-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-weight: 500;
+    font-size: $font-size-lg;
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .2s linear;
+  }
+
+  &__col-icon {
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.about__col-item:hover .about__col-text {
+  opacity: 1;
+}
