@@ -1,0 +1,10 @@
+.basket-icon,
+.search-icon {
+  color: $color-white;
+  transition: all .2s linear;
+
+  &:hover {
+    color: #f4bF87;
+    transform: scale(1.5);
+  }
+}

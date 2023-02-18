@@ -52,6 +52,10 @@ $component: 'header';
       opacity: 1;
       width: 85px;
     }
+
+    &:nth-child(5) {
+      margin-right: 42px;
+    }
   }
 
   &__basket {
