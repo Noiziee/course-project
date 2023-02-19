@@ -25,7 +25,7 @@ $component: 'design';
   }
 
   &__image-tablet {
-    @include image;
+    max-width: 100%;
   }
 
   &__image-phone {
