@@ -87,7 +87,6 @@ $component: 'service';
 
   &__item-title.active &__item-button::after {
     transform: rotate(180deg);
-    opacity: 1;
   }
 }
 
@@ -96,7 +95,6 @@ $component: 'service';
   height: 150px;
   overflow-y: scroll;
   padding: 22px 54px 0 22px;
-  transition: all .2s linear;
 
   &__text {
     font-size: $font-size-base;
