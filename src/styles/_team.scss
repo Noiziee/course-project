@@ -1,0 +1,38 @@
+.team {
+  @include section-indent;
+
+  &__inner {
+    margin: 100px 0 84px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+  }
+
+  &__card {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__card-avatar {
+    width: 370px;
+    height: 424px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  &__card-photo {
+    @include image;
+    position: relative;
+  }
+
+  &__card-name {
+    font-weight: 700;
+    font-size: $font-size-lg;
+    margin-bottom: 40px;
+  }
+
+  &__card-profession {
+    font-size: $font-size-base;
+  }
+}
