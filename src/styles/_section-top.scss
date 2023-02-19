@@ -1,6 +1,8 @@
 .section-top {
   text-align: center;
   padding-top: 25px;
+  position: relative;
+  z-index: 2;
 
   &__suptitle {
     @include font-famaly-kaushan;
@@ -16,11 +18,12 @@
     color: $color-base;
     text-transform: uppercase;
     position: relative;
+    padding-bottom: 44px;
 
     &::after {
       content: '';
       position: absolute;
-      bottom: -44px;
+      bottom: 0;
       left: 50%;
       transform: translateX(-50%);
       width: 170px;
@@ -32,6 +35,6 @@
   &__lead {
     font-size: $font-size-base;
     color: $color-black;
-    margin-top: 92px;
+    margin-top: 40px;
   }
 }
