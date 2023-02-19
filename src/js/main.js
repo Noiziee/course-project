@@ -13,3 +13,18 @@ for (i = 0; i < acc.length; i++) {
     }
   })
 }
+
+// Swiper
+const swiper = new Swiper('.reviews__slider', {
+  // Optional parameters
+  slidesPerView: 1,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-right',
+    prevEl: '.swiper-button-left',
+  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+});

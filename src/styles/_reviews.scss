@@ -1,0 +1,67 @@
+.reviews {
+  margin-bottom: 42px;
+  background-color: #f8f8f8;
+
+  // &__slider {}
+
+  &__wrapper {
+    padding: 42px 0;
+    position: relative;
+  }
+
+  // &__slide {}
+
+  &__slide-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  // &__slide-col {}
+
+  // &__slide-image {}
+}
+
+.blockquote {
+  max-width: 770px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: $font-size-lg;
+  color: #a9afb1;
+  margin-bottom: 21px;
+}
+
+.cite {
+  @include font-famaly-kaushan;
+  font-size: $h3-font-size;
+  color: $color-black;
+  line-height: 1.5;
+  padding-left: 126px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 4px;
+    background-color: #f38281;
+  }
+}
+
+.swiper-button-left {
+  left: 0;
+}
+
+.swiper-button-left,
+.swiper-button-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
