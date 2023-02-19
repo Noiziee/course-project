@@ -1,0 +1,65 @@
+$component: 'services';
+
+.#{$component} {
+  @include section-indent;
+
+  &__row {
+    margin: 130px 0 49px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px 30px;
+  }
+
+  &__col {
+    width: calc(33.333% - 30px);
+    position: relative;
+    padding-left: 100px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -58%;
+      left: 0;
+      transform: translateY(50%);
+      width: 70px;
+      height: 70px;
+      background-image: url('../images/services/services-1.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &:nth-child(2)::before {
+      background-image: url('../images/services/services-2.svg');
+    }
+
+    &:nth-child(3)::before {
+      background-image: url('../images/services/services-3.svg');
+    }
+
+    &:nth-child(4)::before {
+      background-image: url('../images/services/services-4.svg');
+    }
+
+    &:nth-child(5)::before {
+      background-image: url('../images/services/services-5.svg');
+    }
+
+    &:nth-child(6)::before {
+      background-image: url('../images/services/services-6.svg');
+    }
+  }
+
+  &__col-title {
+    font-weight: 700;
+    font-size: $font-size-lg;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+  }
+
+  &__col-text {
+    font-size: $font-size-base;
+  }
+}
