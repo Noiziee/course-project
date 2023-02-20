@@ -1,0 +1,24 @@
+.partners {
+  background-color: #f8f8f8;
+  margin-bottom: 42px;
+
+  &__inner {
+    padding: 42px 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item-link {}
+
+  &__item-image {
+    transition: all .2s linear;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
