@@ -1,5 +1,6 @@
 $component: 'team';
 
+
 .#{$component} {
   @include section-indent;
 
@@ -67,17 +68,15 @@ $component: 'team';
     font-size: $font-size-base;
   }
 
+  &__icon {
+    color: $red-500;
+    background-color: $orange-100;
+    transition: all .2s linear;
+    padding: 4px;
 
-}
-
-.team-icon {
-  color: #f38281;
-  background-color: #f9efcf;
-  transition: all .2s linear;
-  padding: 4px;
-
-  &:hover {
-    background-color: #f38281;
-    color: #fff;
+    &:hover {
+      background-color: $red-500;
+      color: $color-white;
+    }
   }
 }

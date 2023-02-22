@@ -1,0 +1,83 @@
+$components: 'clients';
+
+.#{$components} {
+  @include section-indent;
+  background-image: url('../images/clients/clients-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 42px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 42px 0;
+    position: relative;
+    z-index: 2;
+    gap: 50px;
+  }
+
+  &__col {
+    width: calc(50% - 50px);
+    position: relative;
+    padding-left: 180px;
+  }
+
+  &__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  &__avatar-image {
+    @include image;
+  }
+
+  &__col-name,
+  &__col-profession {
+    text-transform: uppercase;
+  }
+
+  &__col-name {
+    font-weight: 700;
+    font-size: $font-size-lg;
+    margin-bottom: 20px;
+  }
+
+  &__col-profession {
+    font-size: $font-size-base;
+    position: relative;
+    padding-bottom: 30px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $red-500;
+      width: 70px;
+      height: 4px;
+    }
+  }
+
+  &__col-text {
+    margin-top: 60px;
+    font-size: $font-size-base;
+  }
+}

@@ -1,6 +1,9 @@
 // Nullstyle
 @import './reset';
 
+// Variables
+@import './variables';
+
 // Base
 @import './scaffold';
 @import './mixins';
@@ -8,14 +11,19 @@
 
 // Components
 @import './header';
+@import './nav';
 @import './intro';
+@import './slider';
 @import './icon';
 @import './section-top';
 @import './about';
+@import './futures';
 @import './services';
 @import './design';
+@import './accordion';
 @import './service';
 @import './reviews';
 @import './team';
 @import './partners';
 @import './gallery';
+@import './clients';

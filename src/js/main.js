@@ -20,8 +20,8 @@ const swiper = new Swiper('.reviews__slider', {
   slidesPerView: 1,
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-right',
-    prevEl: '.swiper-button-left',
+    nextEl: '.reviews__button-right',
+    prevEl: '.reviews__button-left',
   },
   // pagination: {
   //   el: ".swiper-pagination",

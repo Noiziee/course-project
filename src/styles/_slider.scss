@@ -1,0 +1,51 @@
+$component: 'slider';
+
+
+.#{$component} {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  &__item {
+    width: 100%;
+    border-top: 4px solid $orange-100;
+    color: $color-white;
+    position: relative;
+    opacity: 0.7;
+    transition: opacity .2s linear;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -4;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background-color: $red-500;
+      transition: all .4s linear;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+
+  &__item-link {
+    display: block;
+    font-size: $font-size-base;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 30px 0;
+
+    span {
+      font-weight: 700;
+      font-size: 36px;
+    }
+  }
+}
