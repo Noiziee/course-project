@@ -28,3 +28,5 @@ const swiper = new Swiper('.reviews__slider', {
   //   clickable: true,
   // },
 });
+
+
