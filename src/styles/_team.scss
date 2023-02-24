@@ -50,7 +50,8 @@ $component: 'team';
     object-fit: cover;
   }
 
-  &__col-social {
+  &__social {
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,7 +61,7 @@ $component: 'team';
     transition: all .2s linear;
   }
 
-  &__col-photo:hover &__col-social {
+  &__col-photo:hover &__social {
     opacity: 1;
   }
 
@@ -74,15 +75,25 @@ $component: 'team';
     font-size: $font-size-sm;
   }
 
-  &__icon {
+  // &__social-link {}
+
+  &__social-item {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: $red-500;
+    margin-left: 1px;
     background-color: $orange-100;
     transition: all .2s linear;
-    padding: 4px;
+
 
     &:hover {
       background-color: $red-500;
       color: $color-white;
     }
   }
+
+  // &__icon {}
 }

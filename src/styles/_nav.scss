@@ -45,4 +45,15 @@ $orange-400: #f4bf87;
   &__basket {
     margin-right: 35px;
   }
+
+  &__basket-icon,
+  &__search-icon {
+    color: $color-white;
+    transition: all .2s linear;
+
+    &:hover {
+      color: #f4bF87;
+      transform: scale(1.5);
+    }
+  }
 }

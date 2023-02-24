@@ -30,12 +30,12 @@
           <a class="nav__link" href="#">blog</a>
           <a class="nav__link" href="#">contact</a>
           <a class="nav__basket" href="#">
-            <svg aria-hidden="true" height="24" width="24" class="basket-icon">
+            <svg aria-hidden="true" height="24" width="24" class="nav__basket-icon">
               <use href="./images/header-icon/basket.svg#basket"></use>
             </svg>
           </a>
           <a class="nav__search" href="#">
-            <svg aria-hidden="true" height="24" width="24" class="search-icon">
+            <svg aria-hidden="true" height="24" width="24" class="nav__search-icon">
               <use href="./images/header-icon/search.svg#search"></use>
             </svg>
           </a>
@@ -364,8 +364,6 @@
             </div>
           </div>
         </div>
-        <!-- If we need pagination -->
-        <!--! <div class="swiper-pagination"></div> -->
         <!-- If we need navigation buttons -->
         <div class="reviews__button-left">
           <img class="reviews__button-left__img" src="./images/reviews/arrow-left.svg" alt="arrow-left">
@@ -393,27 +391,35 @@
         <div class="team__col">
           <div class="team__col-photo">
             <img class="team__col-image" src="./images/team/team-1.jpg" alt="Kadin Dias">
-            <div class="team__col-social">
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
-                </svg>
-              </a>
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
-                </svg>
-              </a>
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
-                </svg>
-              </a>
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
-                </svg>
-              </a>
+            <div class="team__social">
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="32" width="18" class="team__icon">
+                    <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="30" width="38" class="team__icon">
+                    <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="36" width="28" class="team__icon">
+                    <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="32" width="32" class="team__icon">
+                    <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
           <div class="team__col-name">Kadin Dias</div>
@@ -422,27 +428,35 @@
         <div class="team__col">
           <div class="team__col-photo">
             <img class="team__col-image" src="./images/team/team-2.jpg" alt="Zain Calzoni">
-            <div class="team__col-social">
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
-                </svg>
-              </a>
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
-                </svg>
-              </a>
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
-                </svg>
-              </a>
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
-                </svg>
-              </a>
+            <div class="team__social">
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="32" width="18" class="team__icon">
+                    <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="30" width="38" class="team__icon">
+                    <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="36" width="28" class="team__icon">
+                    <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="32" width="32" class="team__icon">
+                    <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
           <div class="team__col-name">Zain Calzoni</div>
@@ -451,27 +465,35 @@
         <div class="team__col">
           <div class="team__col-photo">
             <img class="team__col-image" src="./images/team/team-3.jpg" alt="Charlie George">
-            <div class="team__col-social">
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
-                </svg>
-              </a>
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
-                </svg>
-              </a>
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
-                </svg>
-              </a>
-              <a class="team__col-social__link" href="#">
-                <svg aria-hidden="true" height="42" width="42" class="team__icon">
-                  <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
-                </svg>
-              </a>
+            <div class="team__social">
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="32" width="18" class="team__icon">
+                    <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="30" width="38" class="team__icon">
+                    <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="36" width="28" class="team__icon">
+                    <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="team__social-item">
+                <a class="team__social-link" href="#">
+                  <svg aria-hidden="true" height="32" width="32" class="team__icon">
+                    <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
           <div class="team__col-name">Charlie George</div>
@@ -847,7 +869,10 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
+      <div class="footer__row">
 
+
+      </div>
     </div>
   </footer><!-- /Footer -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
