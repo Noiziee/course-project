@@ -70,7 +70,7 @@ $component: 'accordion';
 
   &__content {
     display: none;
-    height: 150px;
+    min-height: 150px;
     overflow-y: scroll;
     padding: 22px 54px 0 22px;
   }
