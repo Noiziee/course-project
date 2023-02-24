@@ -4,12 +4,20 @@
   position: relative;
   z-index: 2;
 
+  @media (max-width: 1024px) {
+    padding-top: 22px;
+  }
+
   &__suptitle {
     @include font-famaly-kaushan;
     font-size: $font-size-md;
     color: $color-base;
     margin-bottom: 30px;
     line-height: 1.4;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-base;
+    }
   }
 
   &__title {
@@ -19,6 +27,10 @@
     text-transform: uppercase;
     position: relative;
     padding-bottom: 44px;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-base;
+    }
 
     &::after {
       content: '';
@@ -36,5 +48,9 @@
     font-size: $font-size-sm;
     color: $color-black;
     margin-top: 40px;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-xs;
+    }
   }
 }

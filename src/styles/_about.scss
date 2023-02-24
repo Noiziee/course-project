@@ -9,11 +9,35 @@ $component: 'about';
     justify-content: space-between;
     gap: 30px;
     margin: 58px 0 108px 0;
-    flex-wrap: wrap;
+
+    @media (max-width: 1024px) {
+      gap: 20px;
+    }
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      gap: 0;
+      margin: 16px 0 58px 0;
+    }
+
+    @media (max-width: 576px) {}
   }
 
   &__col {
+    width: calc(33.3333% - 30px);
     background-color: #95E1D3;
+
+    @media (max-width: 1024px) {
+      width: calc(33.3333% - 20px);
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 16px;
+      background: none;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__col-item {
@@ -31,10 +55,22 @@ $component: 'about';
       width: 100%;
       opacity: 0;
       transition: opacity .2s linear;
+
+      @media (max-width: 767px) {
+        opacity: 1;
+        position: inherit;
+        display: inline-block;
+        min-height: 83px;
+        max-width: 370px;
+      }
     }
 
     &:hover {
       transform: translate(-15px, -15px);
+
+      @media (max-width: 767px) {
+        transform: none;
+      }
     }
 
     &:hover::after {
@@ -44,6 +80,7 @@ $component: 'about';
 
   &__col-image {
     display: block;
+    max-width: 100%;
   }
 
   &__col-text {
@@ -65,6 +102,18 @@ $component: 'about';
     text-align: center;
     opacity: 0;
     transition: opacity .2s linear;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+    }
+
+    @media (max-width: 767px) {
+      opacity: 1;
+      flex-direction: row;
+      align-items: flex-end;
+      padding-bottom: 31px;
+      justify-content: flex-start;
+    }
   }
 
   &__col-item:hover &__col-text {
@@ -74,5 +123,13 @@ $component: 'about';
   &__col-icon {
     display: block;
     margin-bottom: 30px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+      display: inline-block;
+      margin: 0 31px 0 14px;
+      width: 30px;
+      height: 30px;
+    }
   }
 }

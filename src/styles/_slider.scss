@@ -8,6 +8,10 @@ $component: 'slider';
   justify-content: space-between;
   gap: 30px;
 
+  @media (max-width: 1024px) {
+    gap: 20px;
+  }
+
   &__item {
     width: 100%;
     border-top: 4px solid $orange-100;
@@ -15,6 +19,10 @@ $component: 'slider';
     position: relative;
     opacity: 0.7;
     transition: opacity .2s linear;
+
+    @media (max-width: 576px) {
+      padding-bottom: 42px;
+    }
 
     &::before {
       content: '';
@@ -43,9 +51,17 @@ $component: 'slider';
     text-transform: uppercase;
     padding: 30px 0;
 
+    @media (max-width: 576px) {
+      display: none;
+    }
+
     span {
       font-weight: 700;
       font-size: $font-size-lg;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
   }
 }

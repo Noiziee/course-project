@@ -9,6 +9,14 @@ $component: 'intro';
   min-height: 100vh;
   padding-top: 177px;
 
+  @media (max-width: 1024px) {
+    padding-top: 120px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 90px;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -34,6 +42,15 @@ $component: 'intro';
     color: $color-white;
     line-height: 1.4;
     margin-bottom: 10px;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: $font-size-lg;
+      margin-bottom: 60px;
+    }
   }
 
 
@@ -57,6 +74,14 @@ $component: 'intro';
       height: 4px;
       background-color: $color-white;
     }
+
+    @media (max-width: 1024px) {
+      font-size: 96px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 48px;
+    }
   }
 
   &__button {
@@ -79,6 +104,15 @@ $component: 'intro';
 
     &:active {
       border-color: #e4be8d;
+    }
+
+    @media (max-width: 1024px) {
+      padding: 10px 78px;
+      font-size: $font-size-sm;
+    }
+
+    @media (max-width: 576px) {
+      padding: 10px 61px;
     }
   }
 }

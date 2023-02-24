@@ -28,68 +28,374 @@
           <label class="burger-menu__btn" for="burger-menu__toggle">
             <span></span>
           </label>
+          <nav class="nav">
+            <a class="nav__link" href="#about">about</a>
+            <a class="nav__link" href="#service">service</a>
+            <a class="nav__link" href="#gallery">work</a>
+            <a class="nav__link" href="#stories">blog</a>
+            <a class="nav__link" href="#footer">contact</a>
+            <a class="nav__basket" href="#">
+              <svg aria-hidden="true" height="24" width="24" class="nav__basket-icon">
+                <use href="./images/header-icon/basket.svg#basket"></use>
+              </svg>
+            </a>
+            <a class="nav__search" href="#">
+              <svg aria-hidden="true" height="24" width="24" class="nav__search-icon">
+                <use href="./images/header-icon/search.svg#search"></use>
+              </svg>
+            </a>
+          </nav>
         </div>
-        <nav class="nav">
-          <a class="nav__link" href="#">about</a>
-          <a class="nav__link" href="#">service</a>
-          <a class="nav__link" href="#">work</a>
-          <a class="nav__link" href="#">blog</a>
-          <a class="nav__link" href="#">contact</a>
-          <a class="nav__basket" href="#">
-            <svg aria-hidden="true" height="24" width="24" class="nav__basket-icon">
-              <use href="./images/header-icon/basket.svg#basket"></use>
-            </svg>
-          </a>
-          <a class="nav__search" href="#">
-            <svg aria-hidden="true" height="24" width="24" class="nav__search-icon">
-              <use href="./images/header-icon/search.svg#search"></use>
-            </svg>
-          </a>
-        </nav>
-
       </div>
     </div>
   </header><!--/Header -->
   <!-- Intro -->
-  <section class="intro">
-    <div class="container">
-      <div class="intro__inner">
-        <h3 class="intro__suptitle">Creative Template</h3>
-        <h1 class="intro__title">Welcome to MoGo</h1>
-        <a class="intro__button" href="#">learn more</a>
+  <main class="main">
+    <section class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <h3 class="intro__suptitle">Creative Template</h3>
+          <h1 class="intro__title">Welcome to MoGo</h1>
+          <a class="intro__button" href="#">learn more</a>
+        </div>
+        <div class="slider">
+          <div class="slider__item">
+            <a class="slider__item-link" href="#service">
+              <span>01</span>
+              service
+            </a>
+          </div>
+          <div class="slider__item">
+            <a class="slider__item-link" href="#team">
+              <span>02</span>
+              team
+            </a>
+          </div>
+          <div class="slider__item">
+            <a class="slider__item-link" href="#gallery">
+              <span>03</span>
+              gallery
+            </a>
+          </div>
+          <div class="slider__item">
+            <a class="slider__item-link" href="#stories">
+              <span>04</span>
+              stories
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="slider">
-        <div class="slider__item">
-          <a class="slider__item-link" href="#service">
-            <span>01</span>
-            service
-          </a>
-        </div>
-        <div class="slider__item">
-          <a class="slider__item-link" href="#team">
-            <span>02</span>
-            team
-          </a>
-        </div>
-        <div class="slider__item">
-          <a class="slider__item-link" href="#gallery">
-            <span>03</span>
-            gallery
-          </a>
-        </div>
-        <div class="slider__item">
-          <a class="slider__item-link" href="#stories">
-            <span>04</span>
-            stories
-          </a>
+    </section><!-- /Intro -->
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="section-top">
+            <h3 class="section-top__suptitle">What we do</h3>
+            <h2 class="section-top__title">story about us</h2>
+            <p class="section-top__lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
+              ridiculus
+              facilisi
+              amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
+            </p>
+          </div>
+          <div class="about__row">
+            <div class="about__col">
+              <div class="about__col-item">
+                <img class="about__col-image" src="./images/about/about-2.jpg" alt="image">
+                <div class="about__col-text">
+                  <img class="about__col-icon" src="./images/about/about-icon.svg" alt="image">
+                  <a class="about__col-link stretched-link" href="#">Super team</a>
+                </div>
+              </div>
+            </div>
+            <div class="about__col">
+              <div class="about__col-item">
+                <img class="about__col-image" src="./images/about/about-2.jpg" alt="image">
+                <div class="about__col-text">
+                  <img class="about__col-icon" src="./images/about/about-icon.svg" alt="image">
+                  <a class="about__col-link stretched-link" href="#">Super team</a>
+                </div>
+              </div>
+            </div>
+            <div class="about__col">
+              <div class="about__col-item">
+                <img class="about__col-image" src="./images/about/about-3.jpg" alt="image">
+                <div class="about__col-text">
+                  <img class="about__col-icon" src="./images/about/about-icon.svg" alt="image">
+                  <a class="about__col-link stretched-link" href="#">Super team</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section><!-- /Intro -->
-  <!-- About -->
-  <section class="about" style="display: none">
-    <div class="container">
-      <div class="about__inner">
+    </section><!-- /About -->
+    <!-- Futures -->
+    <div class="futures" style="display: none">
+      <div class="container">
+        <div class="futures__row">
+          <div class="futures__item">
+            <div class="futures__item-number">42</div>
+            <p class="futures__item-text">Lorem ipsum</p>
+          </div>
+          <div class="futures__item">
+            <div class="futures__item-number">123</div>
+            <p class="futures__item-text">Lorem ipsum</p>
+          </div>
+          <div class="futures__item">
+            <div class="futures__item-number">15</div>
+            <p class="futures__item-text">Lorem ipsum</p>
+          </div>
+          <div class="futures__item">
+            <div class="futures__item-number">99</div>
+            <p class="futures__item-text">Lorem ipsum</p>
+          </div>
+          <div class="futures__item">
+            <div class="futures__item-number">24</div>
+            <p class="futures__item-text">Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- /Futures -->
+    <!-- Services -->
+    <section class="services" style="display: none">
+      <div class="container">
+        <div class="section-top">
+          <h3 class="section-top__suptitle">We worck with</h3>
+          <h2 class="section-top__title">amazing services</h2>
+        </div>
+        <div class="services__row">
+          <div class="services__col">
+            <h4 class="services__col-title">photography</h4>
+            <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="services__col">
+            <h4 class="services__col-title">web design</h4>
+            <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="services__col">
+            <h4 class="services__col-title">creativity</h4>
+            <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="services__col">
+            <h4 class="services__col-title">seo</h4>
+            <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="services__col">
+            <h4 class="services__col-title">css/html</h4>
+            <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="services__col">
+            <h4 class="services__col-title">digital</h4>
+            <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Services -->
+    <!-- Design -->
+    <section class="design" style="display: none">
+      <div class="container">
+        <div class="section-top">
+          <h3 class="section-top__suptitle">For all devices</h3>
+          <h2 class="section-top__title">unique design</h2>
+        </div>
+        <div class="design__inner">
+          <img class="design__image-tablet" src="./images/design/tablet.png" alt="tablet">
+          <img class="design__image-phone" src="./images/design/phone.png" alt="phone">
+        </div>
+      </div>
+    </section><!-- /Design -->
+    <!-- Service -->
+    <section id="service" class="service" style="display: none">
+      <div class="container">
+        <div class="section-top">
+          <h3 class="section-top__suptitle">Service</h3>
+          <h2 class="section-top__title">what we do</h2>
+          <p class="section-top__lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
+            ridiculus
+            facilisi
+            amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
+          </p>
+        </div>
+        <div class="service__inner">
+          <div class="service__row">
+            <div class="service__col">
+              <img class="service__image" src="./images/service/service-image.jpg" alt="image">
+            </div>
+            <div class="service__col">
+              <div class="accordion">
+                <div class="accordion__item">
+                  <h2 class="accordion__item-title">
+                    <button class="accordion__item-button">
+                      photography
+                    </button>
+                  </h2>
+                  <div class="accordion__content">
+                    <div class="accordion__content-text">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt
+                        tellus
+                        rhoncus ornare. Amet,
+                        et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim
+                        fringilla.
+                        Proin viverra nibh in
+                        vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt
+                        tellus
+                        rhoncus ornare. Amet,
+                        et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim
+                        fringilla.
+                        Proin viverra nibh in
+                        vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <h2 class="accordion__item-title">
+                    <button class="accordion__item-button">
+                      creativity
+                    </button>
+                  </h2>
+                  <div class="accordion__content">
+                    <div class="accordion__content-text">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt
+                        tellus
+                        rhoncus ornare. Amet,
+                        et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim
+                        fringilla.
+                        Proin viverra nibh in
+                        vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt
+                        tellus
+                        rhoncus ornare. Amet,
+                        et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim
+                        fringilla.
+                        Proin viverra nibh in
+                        vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <h2 class="accordion__item-title">
+                    <button class="accordion__item-button">
+                      web design
+                    </button>
+                  </h2>
+                  <div class="accordion__content">
+                    <div class="accordion__content-text">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt
+                        tellus
+                        rhoncus ornare. Amet,
+                        et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim
+                        fringilla.
+                        Proin viverra nibh in
+                        vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt
+                        tellus
+                        rhoncus ornare. Amet,
+                        et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim
+                        fringilla.
+                        Proin viverra nibh in
+                        vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Service -->
+    <!-- Reviews -->
+    <div class="reviews" style="display: none">
+      <div class="container">
+        <!-- Swiper -->
+        <div class="reviews__slider swiper">
+          <!-- Additional required wrapper -->
+          <div class="reviews__wrapper swiper-wrapper ">
+            <!-- Slides -->
+            <div class="reviews__slide swiper-slide ">
+              <div class="reviews__slide-row">
+                <div class="reviews__slide-col">
+                  <img class="reviews__slide-image" src="./images/reviews/reviews-icon.svg" alt="image">
+                </div>
+                <div class="reviews__slide-col">
+                  <blockquote class="reviews__slide-blockquote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                    amet.
+                    Id aliquet
+                    vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+                  </blockquote>
+                  <cite class="reviews__slide-cite">
+                    Jon Doe
+                  </cite>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-row">
+                <div class="reviews__slide-col">
+                  <img class="reviews__slide-image" src="./images/reviews/reviews-icon.svg" alt="image">
+                </div>
+                <div class="reviews__slide-col">
+                  <blockquote class="reviews__slide-blockquote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                    amet.
+                    Id aliquet
+                    vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+                  </blockquote>
+                  <cite class="reviews__slide-cite">
+                    Jon Doe
+                  </cite>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-row">
+                <div class="reviews__slide-col">
+                  <img class="reviews__slide-image" src="./images/reviews/reviews-icon.svg" alt="image">
+                </div>
+                <div class="reviews__slide-col">
+                  <blockquote class="reviews__slide-blockquote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                    amet.
+                    Id aliquet
+                    vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+                  </blockquote>
+                  <cite class="reviews__slide-cite">
+                    Jon Doe
+                  </cite>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="reviews__button-left">
+            <img class="reviews__button-left__img" src="./images/reviews/arrow-left.svg" alt="arrow-left">
+          </div>
+          <div class="reviews__button-right">
+            <img class="reviews__button-right__img" src="./images/reviews/arrow-right.svg" alt="arrow-right">
+          </div>
+        </div><!-- /Swiper -->
+      </div>
+    </div><!-- /Reviews -->
+    <!-- Team -->
+    <section id="team" class="team" style="display: none">
+      <div class="container">
         <div class="section-top">
           <h3 class="section-top__suptitle">What we do</h3>
           <h2 class="section-top__title">story about us</h2>
@@ -100,781 +406,488 @@
             amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
           </p>
         </div>
-        <div class="about__row">
-          <div class="about__col">
-            <div class="about__col-item">
-              <img class="about__col-image" src="./images/about/about-2.jpg" alt="image">
-              <div class="about__col-text">
-                <img class="about__col-icon" src="./images/about/about-icon.svg" alt="image">
-                <a class="about__col-link stretched-link" href="#">Super team</a>
-              </div>
-            </div>
-          </div>
-          <div class="about__col">
-            <div class="about__col-item">
-              <img class="about__col-image" src="./images/about/about-2.jpg" alt="image">
-              <div class="about__col-text">
-                <img class="about__col-icon" src="./images/about/about-icon.svg" alt="image">
-                <a class="about__col-link stretched-link" href="#">Super team</a>
-              </div>
-            </div>
-          </div>
-          <div class="about__col">
-            <div class="about__col-item">
-              <img class="about__col-image" src="./images/about/about-3.jpg" alt="image">
-              <div class="about__col-text">
-                <img class="about__col-icon" src="./images/about/about-icon.svg" alt="image">
-                <a class="about__col-link stretched-link" href="#">Super team</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section><!-- /About -->
-  <!-- Futures -->
-  <div class="futures" style="display: none">
-    <div class="container">
-      <div class="futures__row">
-        <div class="futures__item">
-          <div class="futures__item-number">42</div>
-          <p class="futures__item-text">Lorem ipsum</p>
-        </div>
-        <div class="futures__item">
-          <div class="futures__item-number">123</div>
-          <p class="futures__item-text">Lorem ipsum</p>
-        </div>
-        <div class="futures__item">
-          <div class="futures__item-number">15</div>
-          <p class="futures__item-text">Lorem ipsum</p>
-        </div>
-        <div class="futures__item">
-          <div class="futures__item-number">99</div>
-          <p class="futures__item-text">Lorem ipsum</p>
-        </div>
-        <div class="futures__item">
-          <div class="futures__item-number">24</div>
-          <p class="futures__item-text">Lorem ipsum</p>
-        </div>
-      </div>
-    </div>
-  </div><!-- /Futures -->
-  <!-- Services -->
-  <section class="services" style="display: none">
-    <div class="container">
-      <div class="section-top">
-        <h3 class="section-top__suptitle">We worck with</h3>
-        <h2 class="section-top__title">amazing services</h2>
-      </div>
-      <div class="services__row">
-        <div class="services__col">
-          <h4 class="services__col-title">photography</h4>
-          <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="services__col">
-          <h4 class="services__col-title">web design</h4>
-          <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="services__col">
-          <h4 class="services__col-title">creativity</h4>
-          <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="services__col">
-          <h4 class="services__col-title">seo</h4>
-          <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="services__col">
-          <h4 class="services__col-title">css/html</h4>
-          <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="services__col">
-          <h4 class="services__col-title">digital</h4>
-          <p class="services__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-    </div>
-  </section><!-- /Services -->
-  <!-- Design -->
-  <section class="design" style="display: none">
-    <div class="container">
-      <div class="section-top">
-        <h3 class="section-top__suptitle">For all devices</h3>
-        <h2 class="section-top__title">unique design</h2>
-      </div>
-      <div class="design__inner">
-        <img class="design__image-tablet" src="./images/design/tablet.png" alt="tablet">
-        <img class="design__image-phone" src="./images/design/phone.png" alt="phone">
-      </div>
-    </div>
-  </section><!-- /Design -->
-  <!-- Service -->
-  <section id="service" class="service" style="display: none">
-    <div class="container">
-      <div class="section-top">
-        <h3 class="section-top__suptitle">Service</h3>
-        <h2 class="section-top__title">what we do</h2>
-        <p class="section-top__lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
-          ridiculus
-          facilisi
-          amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
-        </p>
-      </div>
-      <div class="service__inner">
-        <div class="service__row">
-          <div class="service__col">
-            <img class="service__image" src="./images/service/service-image.jpg" alt="image">
-          </div>
-          <div class="service__col">
-            <div class="accordion">
-              <div class="accordion__item">
-                <h2 class="accordion__item-title">
-                  <button class="accordion__item-button">
-                    photography
-                  </button>
-                </h2>
-                <div class="accordion__content">
-                  <div class="accordion__content-text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
-                      rhoncus ornare. Amet,
-                      et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla.
-                      Proin viverra nibh in
-                      vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
-                      rhoncus ornare. Amet,
-                      et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla.
-                      Proin viverra nibh in
-                      vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
-                    </p>
-                  </div>
+        <div class="team__row">
+          <div class="team__col">
+            <div class="team__col-photo">
+              <img class="team__col-image" src="./images/team/team-1.jpg" alt="Kadin Dias">
+              <div class="team__social">
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="32" width="18" class="team__icon">
+                      <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
+                    </svg>
+                  </a>
                 </div>
-              </div>
-              <div class="accordion__item">
-                <h2 class="accordion__item-title">
-                  <button class="accordion__item-button">
-                    creativity
-                  </button>
-                </h2>
-                <div class="accordion__content">
-                  <div class="accordion__content-text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
-                      rhoncus ornare. Amet,
-                      et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla.
-                      Proin viverra nibh in
-                      vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
-                      rhoncus ornare. Amet,
-                      et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla.
-                      Proin viverra nibh in
-                      vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
-                    </p>
-                  </div>
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="30" width="38" class="team__icon">
+                      <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
+                    </svg>
+                  </a>
                 </div>
-              </div>
-              <div class="accordion__item">
-                <h2 class="accordion__item-title">
-                  <button class="accordion__item-button">
-                    web design
-                  </button>
-                </h2>
-                <div class="accordion__content">
-                  <div class="accordion__content-text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
-                      rhoncus ornare. Amet,
-                      et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla.
-                      Proin viverra nibh in
-                      vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
-                      rhoncus ornare. Amet,
-                      et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla.
-                      Proin viverra nibh in
-                      vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
-                    </p>
-                  </div>
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="36" width="28" class="team__icon">
+                      <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="32" width="32" class="team__icon">
+                      <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
+            <div class="team__col-name">Kadin Dias</div>
+            <div class="team__col-profession">founder, ceo</div>
+          </div>
+          <div class="team__col">
+            <div class="team__col-photo">
+              <img class="team__col-image" src="./images/team/team-2.jpg" alt="Zain Calzoni">
+              <div class="team__social">
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="32" width="18" class="team__icon">
+                      <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="30" width="38" class="team__icon">
+                      <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="36" width="28" class="team__icon">
+                      <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="32" width="32" class="team__icon">
+                      <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="team__col-name">Zain Calzoni</div>
+            <div class="team__col-profession">designer</div>
+          </div>
+          <div class="team__col">
+            <div class="team__col-photo">
+              <img class="team__col-image" src="./images/team/team-3.jpg" alt="Charlie George">
+              <div class="team__social">
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="32" width="18" class="team__icon">
+                      <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="30" width="38" class="team__icon">
+                      <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="36" width="28" class="team__icon">
+                      <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="team__social-item">
+                  <a class="team__social-link" href="#">
+                    <svg aria-hidden="true" height="32" width="32" class="team__icon">
+                      <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="team__col-name">Charlie George</div>
+            <div class="team__col-profession">photographer</div>
           </div>
         </div>
       </div>
-    </div>
-  </section><!-- /Service -->
-  <!-- Reviews -->
-  <div class="reviews" style="display: none">
-    <div class="container">
-      <!-- Swiper -->
-      <div class="reviews__slider swiper">
-        <!-- Additional required wrapper -->
-        <div class="reviews__wrapper swiper-wrapper ">
-          <!-- Slides -->
-          <div class="reviews__slide swiper-slide ">
-            <div class="reviews__slide-row">
-              <div class="reviews__slide-col">
-                <img class="reviews__slide-image" src="./images/reviews/reviews-icon.svg" alt="image">
-              </div>
-              <div class="reviews__slide-col">
-                <blockquote class="reviews__slide-blockquote">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
-                  amet.
-                  Id aliquet
-                  vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
-                </blockquote>
-                <cite class="reviews__slide-cite">
-                  Jon Doe
-                </cite>
-              </div>
-            </div>
-          </div>
-          <div class="reviews__slide swiper-slide">
-            <div class="reviews__slide-row">
-              <div class="reviews__slide-col">
-                <img class="reviews__slide-image" src="./images/reviews/reviews-icon.svg" alt="image">
-              </div>
-              <div class="reviews__slide-col">
-                <blockquote class="reviews__slide-blockquote">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
-                  amet.
-                  Id aliquet
-                  vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
-                </blockquote>
-                <cite class="reviews__slide-cite">
-                  Jon Doe
-                </cite>
-              </div>
-            </div>
-          </div>
-          <div class="reviews__slide swiper-slide">
-            <div class="reviews__slide-row">
-              <div class="reviews__slide-col">
-                <img class="reviews__slide-image" src="./images/reviews/reviews-icon.svg" alt="image">
-              </div>
-              <div class="reviews__slide-col">
-                <blockquote class="reviews__slide-blockquote">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
-                  amet.
-                  Id aliquet
-                  vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
-                </blockquote>
-                <cite class="reviews__slide-cite">
-                  Jon Doe
-                </cite>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- If we need navigation buttons -->
-        <div class="reviews__button-left">
-          <img class="reviews__button-left__img" src="./images/reviews/arrow-left.svg" alt="arrow-left">
-        </div>
-        <div class="reviews__button-right">
-          <img class="reviews__button-right__img" src="./images/reviews/arrow-right.svg" alt="arrow-right">
-        </div>
-      </div><!-- /Swiper -->
-    </div>
-  </div><!-- /Reviews -->
-  <!-- Team -->
-  <section id="team" class="team" style="display: none">
-    <div class="container">
-      <div class="section-top">
-        <h3 class="section-top__suptitle">What we do</h3>
-        <h2 class="section-top__title">story about us</h2>
-        <p class="section-top__lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
-          ridiculus
-          facilisi
-          amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
-        </p>
-      </div>
-      <div class="team__row">
-        <div class="team__col">
-          <div class="team__col-photo">
-            <img class="team__col-image" src="./images/team/team-1.jpg" alt="Kadin Dias">
-            <div class="team__social">
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="32" width="18" class="team__icon">
-                    <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="30" width="38" class="team__icon">
-                    <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="36" width="28" class="team__icon">
-                    <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="32" width="32" class="team__icon">
-                    <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="team__col-name">Kadin Dias</div>
-          <div class="team__col-profession">founder, ceo</div>
-        </div>
-        <div class="team__col">
-          <div class="team__col-photo">
-            <img class="team__col-image" src="./images/team/team-2.jpg" alt="Zain Calzoni">
-            <div class="team__social">
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="32" width="18" class="team__icon">
-                    <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="30" width="38" class="team__icon">
-                    <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="36" width="28" class="team__icon">
-                    <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="32" width="32" class="team__icon">
-                    <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="team__col-name">Zain Calzoni</div>
-          <div class="team__col-profession">designer</div>
-        </div>
-        <div class="team__col">
-          <div class="team__col-photo">
-            <img class="team__col-image" src="./images/team/team-3.jpg" alt="Charlie George">
-            <div class="team__social">
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="32" width="18" class="team__icon">
-                    <use href="./images/team/team-social/facebook.svg#facebookIcon"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="30" width="38" class="team__icon">
-                    <use href="./images/team/team-social/twitter.svg#twitterIcon"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="36" width="28" class="team__icon">
-                    <use href="./images/team/team-social/pinterest.svg#pinterestIcon"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="team__social-item">
-                <a class="team__social-link" href="#">
-                  <svg aria-hidden="true" height="32" width="32" class="team__icon">
-                    <use href="./images/team/team-social/instagram.svg#instagramIcon"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="team__col-name">Charlie George</div>
-          <div class="team__col-profession">photographer</div>
-        </div>
-      </div>
-    </div>
-  </section><!-- /Team -->
-  <!-- Partners -->
-  <section class="partners" style="display: none">
-    <div class="container">
-      <div class="partners__inner">
-        <div class="partners__item">
-          <a class="partners__item-link" href="#">
-            <img class="partners__item-image" src="./images/partners/partners-1.svg" alt="partners">
-          </a>
-          <a class="partners__item-link" href="#">
-            <img class="partners__item-image" src="./images/partners/partners-2.svg" alt="partners">
-          </a>
-          <a class="partners__item-link" href="#">
-            <img class="partners__item-image" src="./images/partners/partners-3.svg" alt="partners">
-          </a>
-          <a class="partners__item-link" href="#">
-            <img class="partners__item-image" src="./images/partners/partners-4.svg" alt="partners">
-          </a>
-          <a class="partners__item-link" href="#">
-            <img class="partners__item-image" src="./images/partners/partners-5.svg" alt="partners">
-          </a>
-          <a class="partners__item-link" href="#">
-            <img class="partners__item-image" src="./images/partners/partners-6.svg" alt="partners">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section><!-- /Partners -->
-  <section id="gallery" class="gallery" style="display: none">
-    <div class="container">
-      <div class="section-top">
-        <h3 class="section-top__suptitle">What we do</h3>
-        <h2 class="section-top__title">some of our work</h2>
-        <p class="section-top__lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
-          ridiculus
-          facilisi
-          amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
-        </p>
-      </div>
-    </div>
-    <div class="container-xxl">
-      <div class="gallery__grid">
-        <div class="gallery__grid-item gallery__grid-item_1">
-          <img class="gallery__grid-image" src="./images/gallery/gallery-1.jpg" alt="image">
-          <div class="gallery__grid-content">
-            <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
-            <h4 class="gallery__grid-title">
-              <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
-            </h4>
-            <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
-          </div>
-        </div>
-        <div class="gallery__grid-item gallery__grid-item_2">
-          <img class="gallery__grid-image" src="./images/gallery/gallery-2.jpg" alt="image">
-          <div class="gallery__grid-content">
-            <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
-            <h4 class="gallery__grid-title">
-              <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
-            </h4>
-            <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
-          </div>
-        </div>
-        <div class="gallery__grid-item gallery__grid-item_3">
-          <img class="gallery__grid-image" src="./images/gallery/gallery-3.jpg" alt="image">
-          <div class="gallery__grid-content">
-            <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
-            <h4 class="gallery__grid-title">
-              <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
-            </h4>
-            <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
-          </div>
-        </div>
-        <div class="gallery__grid-item gallery__grid-item_4">
-          <img class="gallery__grid-image" src="./images/gallery/gallery-4.jpg" alt="image">
-          <div class="gallery__grid-content">
-            <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
-            <h4 class="gallery__grid-title">
-              <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
-            </h4>
-            <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
-          </div>
-        </div>
-        <div class="gallery__grid-item gallery__grid-item_5">
-          <img class="gallery__grid-image" src="./images/gallery/gallery-5.jpg" alt="image">
-          <div class="gallery__grid-content">
-            <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
-            <h4 class="gallery__grid-title">
-              <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
-            </h4>
-            <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
-          </div>
-        </div>
-        <div class="gallery__grid-item gallery__grid-item_6">
-          <img class="gallery__grid-image" src="./images/gallery/gallery-6.jpg" alt="image">
-          <div class="gallery__grid-content">
-            <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
-            <h4 class="gallery__grid-title">
-              <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
-            </h4>
-            <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
-          </div>
-        </div>
-        <div class="gallery__grid-item gallery__grid-item_7">
-          <img class="gallery__grid-image" src="./images/gallery/gallery-7.jpg" alt="image">
-          <div class="gallery__grid-content">
-            <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
-            <h4 class="gallery__grid-title">
-              <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
-            </h4>
-            <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
+    </section><!-- /Team -->
+    <!-- Partners -->
+    <section class="partners" style="display: none">
+      <div class="container">
+        <div class="partners__inner">
+          <div class="partners__item">
+            <a class="partners__item-link" href="#">
+              <img class="partners__item-image" src="./images/partners/partners-1.svg" alt="partners">
+            </a>
+            <a class="partners__item-link" href="#">
+              <img class="partners__item-image" src="./images/partners/partners-2.svg" alt="partners">
+            </a>
+            <a class="partners__item-link" href="#">
+              <img class="partners__item-image" src="./images/partners/partners-3.svg" alt="partners">
+            </a>
+            <a class="partners__item-link" href="#">
+              <img class="partners__item-image" src="./images/partners/partners-4.svg" alt="partners">
+            </a>
+            <a class="partners__item-link" href="#">
+              <img class="partners__item-image" src="./images/partners/partners-5.svg" alt="partners">
+            </a>
+            <a class="partners__item-link" href="#">
+              <img class="partners__item-image" src="./images/partners/partners-6.svg" alt="partners">
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Reviews 2 -->
-  <div class="reviews reviews_bg_transparent" style="display: none">
-    <div class="container">
-      <!-- Swiper -->
-      <div class="reviews__slider swiper">
-        <!-- Additional required wrapper -->
-        <div class="reviews__wrapper swiper-wrapper ">
-          <!-- Slides -->
-          <div class="reviews__slide swiper-slide ">
-            <div class="reviews__slide-row">
-              <div class="reviews__slide-col">
-                <div class="reviews__slide-avatar">
+    </section><!-- /Partners -->
+    <section id="gallery" class="gallery" style="display: none">
+      <div class="container">
+        <div class="section-top">
+          <h3 class="section-top__suptitle">What we do</h3>
+          <h2 class="section-top__title">some of our work</h2>
+          <p class="section-top__lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
+            ridiculus
+            facilisi
+            amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
+          </p>
+        </div>
+      </div>
+      <div class="container-xxl">
+        <div class="gallery__grid">
+          <div class="gallery__grid-item gallery__grid-item_1">
+            <img class="gallery__grid-image" src="./images/gallery/gallery-1.jpg" alt="image">
+            <div class="gallery__grid-content">
+              <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
+              <h4 class="gallery__grid-title">
+                <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
+              </h4>
+              <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="gallery__grid-item gallery__grid-item_2">
+            <img class="gallery__grid-image" src="./images/gallery/gallery-2.jpg" alt="image">
+            <div class="gallery__grid-content">
+              <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
+              <h4 class="gallery__grid-title">
+                <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
+              </h4>
+              <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="gallery__grid-item gallery__grid-item_3">
+            <img class="gallery__grid-image" src="./images/gallery/gallery-3.jpg" alt="image">
+            <div class="gallery__grid-content">
+              <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
+              <h4 class="gallery__grid-title">
+                <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
+              </h4>
+              <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="gallery__grid-item gallery__grid-item_4">
+            <img class="gallery__grid-image" src="./images/gallery/gallery-4.jpg" alt="image">
+            <div class="gallery__grid-content">
+              <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
+              <h4 class="gallery__grid-title">
+                <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
+              </h4>
+              <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="gallery__grid-item gallery__grid-item_5">
+            <img class="gallery__grid-image" src="./images/gallery/gallery-5.jpg" alt="image">
+            <div class="gallery__grid-content">
+              <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
+              <h4 class="gallery__grid-title">
+                <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
+              </h4>
+              <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="gallery__grid-item gallery__grid-item_6">
+            <img class="gallery__grid-image" src="./images/gallery/gallery-6.jpg" alt="image">
+            <div class="gallery__grid-content">
+              <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
+              <h4 class="gallery__grid-title">
+                <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
+              </h4>
+              <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="gallery__grid-item gallery__grid-item_7">
+            <img class="gallery__grid-image" src="./images/gallery/gallery-7.jpg" alt="image">
+            <div class="gallery__grid-content">
+              <img class="gallery__grid-icon" src="./images/gallery/gallery-icon.svg" alt="cup">
+              <h4 class="gallery__grid-title">
+                <a class="gallery__grid-link stretched-link" href="#">creatively design</a>
+              </h4>
+              <p class="gallery__grid-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews 2 -->
+    <div class="reviews reviews_bg_transparent" style="display: none">
+      <div class="container">
+        <!-- Swiper -->
+        <div class="reviews__slider swiper">
+          <!-- Additional required wrapper -->
+          <div class="reviews__wrapper swiper-wrapper ">
+            <!-- Slides -->
+            <div class="reviews__slide swiper-slide ">
+              <div class="reviews__slide-row">
+                <div class="reviews__slide-col">
+                  <div class="reviews__slide-avatar">
+                    <img class="reviews__slide-image" src="./images/reviews/avatar-image.png" alt="image">
+                  </div>
+                </div>
+                <div class="reviews__slide-col">
+                  <blockquote class="reviews__slide-blockquote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                    amet.
+                    Id aliquet
+                    vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+                  </blockquote>
+                  <cite class="reviews__slide-cite">
+                    James Philips
+                  </cite>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-row">
+                <div class="reviews__slide-col">
                   <img class="reviews__slide-image" src="./images/reviews/avatar-image.png" alt="image">
                 </div>
+                <div class="reviews__slide-col">
+                  <blockquote class="reviews__slide-blockquote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                    amet.
+                    Id aliquet
+                    vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+                  </blockquote>
+                  <cite class="reviews__slide-cite">
+                    James Philips
+                  </cite>
+                </div>
               </div>
-              <div class="reviews__slide-col">
-                <blockquote class="reviews__slide-blockquote">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
-                  amet.
-                  Id aliquet
-                  vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
-                </blockquote>
-                <cite class="reviews__slide-cite">
-                  James Philips
-                </cite>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-row">
+                <div class="reviews__slide-col">
+                  <img class="reviews__slide-image" src="./images/reviews/avatar-image.png" alt="image">
+                </div>
+                <div class="reviews__slide-col">
+                  <blockquote class="reviews__slide-blockquote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                    amet.
+                    Id aliquet
+                    vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+                  </blockquote>
+                  <cite class="reviews__slide-cite">
+                    James Philips
+                  </cite>
+                </div>
               </div>
             </div>
           </div>
-          <div class="reviews__slide swiper-slide">
-            <div class="reviews__slide-row">
-              <div class="reviews__slide-col">
-                <img class="reviews__slide-image" src="./images/reviews/avatar-image.png" alt="image">
-              </div>
-              <div class="reviews__slide-col">
-                <blockquote class="reviews__slide-blockquote">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
-                  amet.
-                  Id aliquet
-                  vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
-                </blockquote>
-                <cite class="reviews__slide-cite">
-                  James Philips
-                </cite>
-              </div>
-            </div>
+          <div class="reviews__button-left">
+            <img class="reviews__button-left__img" src="./images/reviews/arrow-left.svg" alt="arrow-left">
           </div>
-          <div class="reviews__slide swiper-slide">
-            <div class="reviews__slide-row">
-              <div class="reviews__slide-col">
-                <img class="reviews__slide-image" src="./images/reviews/avatar-image.png" alt="image">
-              </div>
-              <div class="reviews__slide-col">
-                <blockquote class="reviews__slide-blockquote">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
-                  amet.
-                  Id aliquet
-                  vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
-                </blockquote>
-                <cite class="reviews__slide-cite">
-                  James Philips
-                </cite>
-              </div>
-            </div>
+          <div class="reviews__button-right">
+            <img class="reviews__button-right__img" src="./images/reviews/arrow-right.svg" alt="arrow-right">
           </div>
-        </div>
-        <div class="reviews__button-left">
-          <img class="reviews__button-left__img" src="./images/reviews/arrow-left.svg" alt="arrow-left">
-        </div>
-        <div class="reviews__button-right">
-          <img class="reviews__button-right__img" src="./images/reviews/arrow-right.svg" alt="arrow-right">
-        </div>
-      </div><!-- /Swiper -->
-    </div>
-  </div><!-- /Reviews 2-->
-  <!-- Clients -->
-  <section class="clients" style="display: none">
-    <div class="container">
-      <div class="section-top">
-        <h3 class="section-top__suptitle">What we do</h3>
-        <h2 class="section-top__title">some of our work</h2>
+        </div><!-- /Swiper -->
       </div>
-      <div class="clients__row">
-        <div class="clients__col">
-          <div class="clients__avatar">
-            <img class="clients__avatar-image" src="./images/clients/clients-avatar-1.png" alt="Phillip Culhane">
-          </div>
-          <div class="clients__col-name">Phillip Culhane</div>
-          <div class="clients__col-profession">photographer</div>
-          <p class="clients__col-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
-            tincidunt duis
-            amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
-          </p>
+    </div><!-- /Reviews 2-->
+    <!-- Clients -->
+    <section class="clients" style="display: none">
+      <div class="container">
+        <div class="section-top">
+          <h3 class="section-top__suptitle">What we do</h3>
+          <h2 class="section-top__title">some of our work</h2>
         </div>
-        <div class="clients__col">
-          <div class="clients__avatar">
-            <img class="clients__avatar-image" src="./images/clients/clients-avatar-2.png" alt="Paityn Press">
-          </div>
-          <div class="clients__col-name">Paityn Press</div>
-          <div class="clients__col-profession">photographer</div>
-          <p class="clients__col-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
-            tincidunt duis
-            amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
-          </p>
-        </div>
-        <div class="clients__col">
-          <div class="clients__avatar">
-            <img class="clients__avatar-image" src="./images/clients/clients-avatar-3.png" alt="Dulce Gouse">
-          </div>
-          <div class="clients__col-name">Dulce Gouse</div>
-          <div class="clients__col-profession">photographer</div>
-          <p class="clients__col-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
-            tincidunt duis
-            amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
-          </p>
-        </div>
-        <div class="clients__col">
-          <div class="clients__avatar">
-            <img class="clients__avatar-image" src="./images/clients/clients-avatar-4.png" alt="Zaire Schleifer">
-          </div>
-          <div class="clients__col-name">Zaire Schleifer</div>
-          <div class="clients__col-profession">photographer</div>
-          <p class="clients__col-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
-            tincidunt duis
-            amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section><!-- /Clients -->
-  <!-- Stories -->
-  <section id="stories" class="stories" style="display: none">
-    <div class="container">
-      <div class="section-top">
-        <h3 class="section-top__suptitle">Our Stories</h3>
-        <h2 class="section-top__title">Latest blog</h2>
-      </div>
-      <div class="stories__row">
-        <div class="stories__col">
-          <div class="stories__card">
-            <div class="stories__card-image">
-              <img class="stories__card-img" src="./images/stories/image.jpg" alt="image">
-              <div class="stories__card-data">
-                15
-                <span>jan</span>
-              </div>
+        <div class="clients__row">
+          <div class="clients__col">
+            <div class="clients__avatar">
+              <img class="clients__avatar-image" src="./images/clients/clients-avatar-1.png" alt="Phillip Culhane">
             </div>
-            <h4 class="stories__card-title">
-              <a class="stories__card-link stretched-link" href="#">
-                Lorem ipsum dolor sit amet
-              </a>
-            </h4>
-            <p class="stories__card-text">
+            <div class="clients__col-name">Phillip Culhane</div>
+            <div class="clients__col-profession">photographer</div>
+            <p class="clients__col-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
               tincidunt duis
               amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
             </p>
           </div>
-          <div class="stories__icons">
-            <div class="stories__icon">
-              <a class="stories__icon-link" href="#">
-                <img class="stories__icon-watch" src="./images/stories/icon-1.svg" alt="watch">
-              </a>
-              <span>542</span>
+          <div class="clients__col">
+            <div class="clients__avatar">
+              <img class="clients__avatar-image" src="./images/clients/clients-avatar-2.png" alt="Paityn Press">
             </div>
-            <div class="stories__icon">
-              <a class="stories__icon-link" href="#">
-                <img class="stories__icon-message" src="./images/stories/icon-2.svg" alt="message">
-              </a>
-              <span>17</span>
-            </div>
-          </div>
-        </div>
-        <div class="stories__col">
-          <div class="stories__card">
-            <div class="stories__card-image">
-              <img class="stories__card-img" src="./images/stories/image.jpg" alt="image">
-              <div class="stories__card-data">
-                15
-                <span>jan</span>
-              </div>
-            </div>
-            <h4 class="stories__card-title">
-              <a class="stories__card-link stretched-link" href="#">
-                Lorem ipsum dolor sit amet
-              </a>
-            </h4>
-            <p class="stories__card-text">
+            <div class="clients__col-name">Paityn Press</div>
+            <div class="clients__col-profession">photographer</div>
+            <p class="clients__col-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
               tincidunt duis
               amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
             </p>
           </div>
-          <div class="stories__icons">
-            <div class="stories__icon">
-              <a class="stories__icon-link" href="#">
-                <img class="stories__icon-watch" src="./images/stories/icon-1.svg" alt="watch">
-              </a>
-              <span>542</span>
+          <div class="clients__col">
+            <div class="clients__avatar">
+              <img class="clients__avatar-image" src="./images/clients/clients-avatar-3.png" alt="Dulce Gouse">
             </div>
-            <div class="stories__icon">
-              <a class="stories__icon-link" href="#">
-                <img class="stories__icon-message" src="./images/stories/icon-2.svg" alt="message">
-              </a>
-              <span>17</span>
-            </div>
-          </div>
-        </div>
-        <div class="stories__col">
-          <div class="stories__card">
-            <div class="stories__card-image">
-              <img class="stories__card-img" src="./images/stories/image.jpg" alt="image">
-              <div class="stories__card-data">
-                15
-                <span>jan</span>
-              </div>
-            </div>
-            <h4 class="stories__card-title">
-              <a class="stories__card-link stretched-link" href="#">
-                Lorem ipsum dolor sit amet
-              </a>
-            </h4>
-            <p class="stories__card-text">
+            <div class="clients__col-name">Dulce Gouse</div>
+            <div class="clients__col-profession">photographer</div>
+            <p class="clients__col-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
               tincidunt duis
               amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
             </p>
           </div>
-          <div class="stories__icons">
-            <div class="stories__icon">
-              <a class="stories__icon-link" href="#">
-                <img class="stories__icon-watch" src="./images/stories/icon-1.svg" alt="watch">
-              </a>
-              <span>542</span>
+          <div class="clients__col">
+            <div class="clients__avatar">
+              <img class="clients__avatar-image" src="./images/clients/clients-avatar-4.png" alt="Zaire Schleifer">
             </div>
-            <div class="stories__icon">
-              <a class="stories__icon-link" href="#">
-                <img class="stories__icon-message" src="./images/stories/icon-2.svg" alt="message">
-              </a>
-              <span>17</span>
+            <div class="clients__col-name">Zaire Schleifer</div>
+            <div class="clients__col-profession">photographer</div>
+            <p class="clients__col-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+              tincidunt duis
+              amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Clients -->
+    <!-- Stories -->
+    <section id="stories" class="stories" style="display: none">
+      <div class="container">
+        <div class="section-top">
+          <h3 class="section-top__suptitle">Our Stories</h3>
+          <h2 class="section-top__title">Latest blog</h2>
+        </div>
+        <div class="stories__row">
+          <div class="stories__col">
+            <div class="stories__card">
+              <div class="stories__card-image">
+                <img class="stories__card-img" src="./images/stories/image.jpg" alt="image">
+                <div class="stories__card-data">
+                  15
+                  <span>jan</span>
+                </div>
+              </div>
+              <h4 class="stories__card-title">
+                <a class="stories__card-link stretched-link" href="#">
+                  Lorem ipsum dolor sit amet
+                </a>
+              </h4>
+              <p class="stories__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+                tincidunt duis
+                amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+              </p>
+            </div>
+            <div class="stories__icons">
+              <div class="stories__icon">
+                <a class="stories__icon-link" href="#">
+                  <img class="stories__icon-watch" src="./images/stories/icon-1.svg" alt="watch">
+                </a>
+                <span>542</span>
+              </div>
+              <div class="stories__icon">
+                <a class="stories__icon-link" href="#">
+                  <img class="stories__icon-message" src="./images/stories/icon-2.svg" alt="message">
+                </a>
+                <span>17</span>
+              </div>
+            </div>
+          </div>
+          <div class="stories__col">
+            <div class="stories__card">
+              <div class="stories__card-image">
+                <img class="stories__card-img" src="./images/stories/image.jpg" alt="image">
+                <div class="stories__card-data">
+                  15
+                  <span>jan</span>
+                </div>
+              </div>
+              <h4 class="stories__card-title">
+                <a class="stories__card-link stretched-link" href="#">
+                  Lorem ipsum dolor sit amet
+                </a>
+              </h4>
+              <p class="stories__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+                tincidunt duis
+                amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+              </p>
+            </div>
+            <div class="stories__icons">
+              <div class="stories__icon">
+                <a class="stories__icon-link" href="#">
+                  <img class="stories__icon-watch" src="./images/stories/icon-1.svg" alt="watch">
+                </a>
+                <span>542</span>
+              </div>
+              <div class="stories__icon">
+                <a class="stories__icon-link" href="#">
+                  <img class="stories__icon-message" src="./images/stories/icon-2.svg" alt="message">
+                </a>
+                <span>17</span>
+              </div>
+            </div>
+          </div>
+          <div class="stories__col">
+            <div class="stories__card">
+              <div class="stories__card-image">
+                <img class="stories__card-img" src="./images/stories/image.jpg" alt="image">
+                <div class="stories__card-data">
+                  15
+                  <span>jan</span>
+                </div>
+              </div>
+              <h4 class="stories__card-title">
+                <a class="stories__card-link stretched-link" href="#">
+                  Lorem ipsum dolor sit amet
+                </a>
+              </h4>
+              <p class="stories__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+                tincidunt duis
+                amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+              </p>
+            </div>
+            <div class="stories__icons">
+              <div class="stories__icon">
+                <a class="stories__icon-link" href="#">
+                  <img class="stories__icon-watch" src="./images/stories/icon-1.svg" alt="watch">
+                </a>
+                <span>542</span>
+              </div>
+              <div class="stories__icon">
+                <a class="stories__icon-link" href="#">
+                  <img class="stories__icon-message" src="./images/stories/icon-2.svg" alt="message">
+                </a>
+                <span>17</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section><!-- /Stories -->
+    </section><!-- /Stories -->
+  </main>
   <!-- Footer -->
-  <footer class="footer" style="display: none">
+  <footer id="footer" class="footer" style="display: none">
     <div class="container">
       <div class="footer__row">
         <div class="footer__col">
