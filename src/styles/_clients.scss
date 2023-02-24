@@ -56,12 +56,12 @@ $components: 'clients';
 
   &__col-name {
     font-weight: 700;
-    font-size: $font-size-lg;
+    font-size: $font-size-base;
     margin-bottom: 20px;
   }
 
   &__col-profession {
-    font-size: $font-size-base;
+    font-size: $font-size-sm;
     position: relative;
     padding-bottom: 30px;
 
@@ -78,6 +78,6 @@ $components: 'clients';
 
   &__col-text {
     margin-top: 60px;
-    font-size: $font-size-base;
+    font-size: $font-size-sm;
   }
 }

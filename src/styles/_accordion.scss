@@ -32,11 +32,12 @@ $component: 'accordion';
 
   &__item-title {
     padding-left: 82px;
+
   }
 
   &__item-button {
     font-weight: 700;
-    font-size: $font-size-lg;
+    font-size: $font-size-base;
     text-transform: uppercase;
     width: 100%;
     line-height: 1;
@@ -75,7 +76,7 @@ $component: 'accordion';
   }
 
   &__content-text {
-    font-size: $font-size-base;
+    font-size: $font-size-sm;
 
     p {
       margin-bottom: 20px;

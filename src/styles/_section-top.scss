@@ -6,7 +6,7 @@
 
   &__suptitle {
     @include font-famaly-kaushan;
-    font-size: $h3-font-size;
+    font-size: $font-size-md;
     color: $color-base;
     margin-bottom: 30px;
     line-height: 1.4;
@@ -14,7 +14,7 @@
 
   &__title {
     font-weight: 900;
-    font-size: $h2-font-size;
+    font-size: $font-size-lg;
     color: $color-base;
     text-transform: uppercase;
     position: relative;
@@ -33,7 +33,7 @@
   }
 
   &__lead {
-    font-size: $font-size-base;
+    font-size: $font-size-sm;
     color: $color-black;
     margin-top: 40px;
   }

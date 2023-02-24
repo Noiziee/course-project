@@ -4,7 +4,7 @@ $component: 'reviews';
   margin-bottom: 42px;
   background-color: #f8f8f8;
 
-  &_bg_transparent {
+  &_bg-transparent {
     background: none;
   }
 
@@ -41,14 +41,14 @@ $component: 'reviews';
     max-width: 770px;
     font-weight: 500;
     font-style: italic;
-    font-size: $font-size-lg;
+    font-size: $font-size-base;
     color: #a9afb1;
     margin-bottom: 21px;
   }
 
   &__slide-cite {
     @include font-famaly-kaushan;
-    font-size: $h3-font-size;
+    font-size: $font-size-md;
     color: $color-black;
     line-height: 1.5;
     padding-left: 126px;

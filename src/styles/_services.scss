@@ -53,13 +53,13 @@ $component: 'services';
 
   &__col-title {
     font-weight: 700;
-    font-size: $font-size-lg;
+    font-size: $font-size-base;
     text-transform: uppercase;
     margin-bottom: 35px;
 
   }
 
   &__col-text {
-    font-size: $font-size-base;
+    font-size: $font-size-sm;
   }
 }

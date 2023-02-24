@@ -9,6 +9,7 @@ $component: 'about';
     justify-content: space-between;
     gap: 30px;
     margin: 58px 0 108px 0;
+    flex-wrap: wrap;
   }
 
   &__col {
@@ -58,7 +59,7 @@ $component: 'about';
     transform: translateY(-50%);
     z-index: 2;
     font-weight: 500;
-    font-size: $font-size-lg;
+    font-size: $font-size-base;
     color: $color-white;
     text-transform: uppercase;
     text-align: center;
