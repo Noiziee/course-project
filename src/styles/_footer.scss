@@ -1,0 +1,188 @@
+$component: 'footer';
+
+$gray-500: #c6cbcd;
+$color-aqua: #95e1d3;
+
+.#{$component} {
+  @include section-indent;
+  background-color: #f8f8f8;
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+    padding-bottom: 42px;
+    border-bottom: 1px solid $gray-500;
+  }
+
+  // &__col {}
+
+  &__logo-image {
+    display: inline-block;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    color: $gray-500;
+    font-size: $font-size-sm;
+    margin-bottom: 50px;
+    max-width: 370px;
+  }
+
+  &__subscribers {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray-500;
+  }
+
+  &__subscribers-title {
+    font-style: italic;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+
+    span {
+      font-weight: 700;
+      font-style: normal;
+      font-size: $font-size-lg;
+    }
+
+    sub {
+      font-weight: 700;
+    }
+  }
+
+  &__social {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+  }
+
+  &__social-follow {
+    color: $gray-500;
+    font-size: $font-size-xs;
+    margin-right: 25px;
+  }
+
+  &__social-item {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 11px;
+    transition: transform .2s linear;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+
+  // &__social-link {}
+
+  &__social-icon {
+    color: $color-aqua;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__form-input {
+    border: none;
+    border: 1px solid $gray-500;
+    background: none;
+    outline: none;
+    padding: 16px 10px;
+    font-size: $font-size-sm;
+    margin-right: -5px;
+
+    &::placeholder {
+      color: $gray-500;
+      text-align: center;
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__form-button {
+    padding: 17px 25px;
+    font-weight: 700;
+    font-size: $font-size-sm;
+    color: $color-white;
+    background-color: $color-aqua;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background-color: #2d6c60;
+    }
+  }
+
+  // Blogs
+
+  &__title {
+    margin-bottom: 45px;
+    font-weight: 700;
+    font-size: $font-size-base;
+    text-transform: uppercase;
+  }
+
+  &__blog {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  // &__blog-image {}
+
+  // &__blog-content {}
+
+  &__blog-text {
+    font-weight: 700;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    max-width: 270px;
+  }
+
+  &__blog-data {
+    font-size: $font-size-xs;
+  }
+
+  // Instagram
+  &__instagram {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+    margin-bottom: 40px;
+  }
+
+  &__instagram-gallery {
+    display: flex;
+  }
+
+  &__instagram-photo {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+  }
+
+  &__instagram-link {
+    text-transform: uppercase;
+    font-size: $font-size-xs;
+    text-decoration: underline;
+  }
+
+  // Сopyright
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  &__copyright-text {
+    font-weight: 700;
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+  }
+}
