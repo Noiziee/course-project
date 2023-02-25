@@ -1,18 +1,52 @@
 .partners {
   background-color: #f8f8f8;
-  margin-bottom: 42px;
+  margin-bottom: 15px;
 
   &__inner {
     padding: 42px 0;
-  }
-
-  &__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      gap: 35px 0;
+      padding: 30px 0;
+    }
   }
 
-  &__item-link {}
+  &__item {
+
+    @media (max-width: 768px) {
+      &:nth-child(1) {
+        width: 50%;
+      }
+
+      &:nth-child(2) {
+        width: 50%;
+      }
+
+      &:nth-child(3) {
+        width: 100%;
+      }
+
+      &:nth-child(4) {
+        width: 50%;
+      }
+
+      &:nth-child(5) {
+        width: 50%;
+      }
+
+      &:nth-child(6) {
+        width: 100%;
+      }
+    }
+  }
+
+  // &__item-link {}
 
   &__item-image {
     transition: all .2s linear;
