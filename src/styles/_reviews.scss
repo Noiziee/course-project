@@ -21,7 +21,7 @@ $component: 'reviews';
 
   // &__slide {}
 
-  &__slide-row {
+  &__row {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,29 +29,40 @@ $component: 'reviews';
     padding: 0 40px 0 55px;
     cursor: pointer;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     @media (max-width: 576px) {
       padding: 0;
     }
   }
 
   // &__slide-col {}
-  &__slide-avatar {
+  &__col-avatar {
     width: 170px;
     height: 170px;
     overflow: hidden;
     border-radius: 50%;
+
+    @media (max-width: 768px) {
+      width: 115px;
+      height: 115px;
+    }
   }
 
-  &__slide-image {
+  &__col-photo {
     @include image;
+  }
 
+  &__col-image {
     @media (max-width: 768px) {
       display: none;
     }
   }
 
 
-  &__slide-blockquote {
+  &__col-blockquote {
     max-width: 770px;
     font-weight: 500;
     font-style: italic;
@@ -68,7 +79,7 @@ $component: 'reviews';
     }
   }
 
-  &__slide-cite {
+  &__col-cite {
     @include font-famaly-kaushan;
     font-size: $font-size-md;
     color: $color-black;

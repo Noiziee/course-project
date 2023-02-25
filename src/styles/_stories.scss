@@ -8,7 +8,10 @@ $component: 'stories';
     justify-content: space-between;
     gap: 30px;
     margin: 42px 0;
-    flex-wrap: wrap;
+  }
+
+  &__col {
+    width: calc(33.3333% - 30px);
   }
 
   &__card {
