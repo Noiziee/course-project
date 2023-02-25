@@ -227,7 +227,7 @@ $color-aqua: #95e1d3;
       gap: 20px;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
       gap: 10px;
     }
   }
@@ -268,11 +268,18 @@ $color-aqua: #95e1d3;
 
   &__instagram-gallery {
     display: flex;
+    border-bottom: 1px solid $color-white;
+    border-left: 1px solid $color-white;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      border: none;
+    }
   }
 
   &__instagram-photo {
-    border-bottom: 1px solid $color-white;
-    border-left: 1px solid $color-white;
+
     max-width: 100%;
     display: block;
   }
