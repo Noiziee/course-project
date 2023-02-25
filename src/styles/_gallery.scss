@@ -10,34 +10,83 @@ $component: 'gallery';
     grid-template-areas:
       'gallery__grid-item_1 gallery__grid-item_2 gallery__grid-item_3 gallery__grid-item_4'
       'gallery__grid-item_5 gallery__grid-item_6 gallery__grid-item_3 gallery__grid-item_7';
+
+    @media (max-width: 1024px) {
+      margin: 55px 0;
+    }
+
+    @media (max-width: 768px) {
+      margin: 15px 0 29px 0;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(5, auto);
+    }
   }
 
   &__grid-item_1 {
     grid-area: gallery__grid-item_1;
+
+    @media (max-width: 768px) {
+      grid-column: 1/5;
+      grid-row: 1/2;
+    }
   }
 
   &__grid-item_2 {
     grid-area: gallery__grid-item_2;
+
+    @media (max-width: 768px) {
+      grid-column: -1;
+      grid-row: 4/5;
+    }
   }
 
   &__grid-item_3 {
     grid-area: gallery__grid-item_3;
+
+    @media (max-width: 768px) {
+      grid-column: -1;
+      grid-row: 1/4;
+    }
   }
 
   &__grid-item_4 {
     grid-area: gallery__grid-item_4;
+
+    @media (max-width: 768px) {
+      grid-column: 4/4;
+      grid-row: 4/5;
+    }
   }
 
   &__grid-item_5 {
     grid-area: gallery__grid-item_5;
+
+    @media (max-width: 768px) {
+      grid-column: 2/5;
+      grid-row: 2/3;
+    }
   }
 
   &__grid-item_6 {
     grid-area: gallery__grid-item_6;
+
+    @media (max-width: 768px) {
+      grid-column: 1/6;
+      grid-row: 5/-1;
+    }
   }
 
   &__grid-item_7 {
     grid-area: gallery__grid-item_7;
+
+    @media (max-width: 768px) {
+      grid-column: 4/5;
+      grid-row: 3/4;
+
+    }
   }
 
   &__grid-item {
@@ -54,7 +103,6 @@ $component: 'gallery';
       opacity: 0;
       transition: all .2s linear;
       width: 100%;
-      height: 100%;
     }
 
     &:hover::after {
@@ -90,6 +138,14 @@ $component: 'gallery';
 
   &__grid-icon {
     margin-bottom: 57px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 38px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__grid-title {
@@ -97,9 +153,18 @@ $component: 'gallery';
     text-transform: uppercase;
     font-size: $font-size-base;
     margin-bottom: 25px;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+      margin-bottom: 15px;
+    }
   }
 
   &__grid-text {
     font-size: $font-size-sm;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-xs;
+    }
   }
 }
