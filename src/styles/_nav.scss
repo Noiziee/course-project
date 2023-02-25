@@ -5,7 +5,7 @@ $orange-400: #f4bf87;
   display: flex;
   align-items: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: none;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ $orange-400: #f4bf87;
       margin-right: 45px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       display: inline-block;
       font-weight: 700;
       margin: 0;
@@ -72,7 +72,7 @@ $orange-400: #f4bf87;
     &:nth-child(5) {
       margin-right: 42px;
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         margin-right: 0;
       }
     }
@@ -92,7 +92,7 @@ $orange-400: #f4bf87;
       transform: scale(1.5);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       display: none;
     }
   }

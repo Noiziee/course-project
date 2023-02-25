@@ -7,6 +7,10 @@ $component: 'futures';
     display: flex;
     justify-content: space-between;
     text-align: center;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -14,8 +18,31 @@ $component: 'futures';
     color: $color-white;
     border-right: 1px solid $color-white;
 
+    @media (max-width: 1024px) {
+      padding: 50px 40px;
+    }
+
+    @media (max-width: 768px) {
+      width: 50%;
+      text-align: center;
+      border-right: none;
+      border-bottom: 1px solid $color-white;
+
+      &:last-child {
+        width: 100%;
+      }
+    }
+
     &:first-child {
       border-left: 1px solid $color-white;
+
+      @media (max-width: 768px) {
+        border-left: none;
+      }
+    }
+
+    @media (max-width: 576px) {
+      padding: 30px 15px 15px 15px;
     }
   }
 
@@ -23,10 +50,18 @@ $component: 'futures';
     font-weight: 700;
     font-size: ($font-size-md * 2.7);
     margin-bottom: 25px;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+    }
   }
 
   &__item-text {
     font-weight: 500;
     font-size: $font-size-base;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+    }
   }
 }

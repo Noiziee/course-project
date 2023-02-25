@@ -23,13 +23,12 @@ const swiper = new Swiper('.reviews__slider', {
     nextEl: '.reviews__button-right',
     prevEl: '.reviews__button-left',
   },
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
 });
 
 // off scroll
 document.querySelector('#burger-menu__toggle').addEventListener('change', function (e) {
   document.body.style.overflow = e.target.checked === true ? 'hidden' : '';
 });
+
+
+

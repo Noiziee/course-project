@@ -10,6 +10,16 @@ $component: 'services';
     justify-content: space-between;
     align-items: center;
     gap: 140px 30px;
+
+    @media (max-width: 1024px) {
+      gap: 58px 25px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 65px 0 58px 0;
+      gap: 36px 0;
+      margin: 66px 0 58px 0;
+    }
   }
 
   &__col {
@@ -17,37 +27,38 @@ $component: 'services';
     position: relative;
     padding-left: 100px;
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: -58%;
-      left: 0;
-      transform: translateY(50%);
-      width: 70px;
-      height: 70px;
-      background-image: url('../images/services/services-1.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
+    @media (max-width: 1024px) {
+      padding-left: 84px;
     }
 
-    &:nth-child(2)::before {
-      background-image: url('../images/services/services-2.svg');
+    @media (max-width: 768px) {
+      width: calc(50% - 25px);
     }
 
-    &:nth-child(3)::before {
-      background-image: url('../images/services/services-3.svg');
+    @media (max-width: 576px) {
+      width: 100%;
+      padding-left: 77px;
+    }
+  }
+
+  &__col-cover {
+    display: inline-block;
+    position: absolute;
+    top: -35px;
+    left: 0;
+
+    @media (max-width: 576px) {
+      top: -25px;
+    }
+  }
+
+  &__col-cover img {
+    @media (max-width: 1024px) {
+      width: 59px;
     }
 
-    &:nth-child(4)::before {
-      background-image: url('../images/services/services-4.svg');
-    }
-
-    &:nth-child(5)::before {
-      background-image: url('../images/services/services-5.svg');
-    }
-
-    &:nth-child(6)::before {
-      background-image: url('../images/services/services-6.svg');
+    @media (max-width: 576px) {
+      width: 57px;
     }
   }
 
@@ -57,9 +68,20 @@ $component: 'services';
     text-transform: uppercase;
     margin-bottom: 35px;
 
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 25px;
+    }
   }
 
   &__col-text {
     font-size: $font-size-sm;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-xs;
+    }
   }
 }

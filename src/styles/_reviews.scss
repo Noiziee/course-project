@@ -4,6 +4,10 @@ $component: 'reviews';
   margin-bottom: 42px;
   background-color: #f8f8f8;
 
+  @media (max-width: 1024px) {
+    margin-bottom: 15px;
+  }
+
   &_bg_transparent {
     background: none;
   }
@@ -22,6 +26,12 @@ $component: 'reviews';
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding: 0 40px 0 55px;
+    cursor: pointer;
+
+    @media (max-width: 576px) {
+      padding: 0;
+    }
   }
 
   // &__slide-col {}
@@ -34,6 +44,10 @@ $component: 'reviews';
 
   &__slide-image {
     @include image;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
 
@@ -44,6 +58,14 @@ $component: 'reviews';
     font-size: $font-size-base;
     color: #a9afb1;
     margin-bottom: 21px;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+    }
+
+    @media (max-width: 576px) {
+      font-size: $font-size-xs;
+    }
   }
 
   &__slide-cite {
@@ -54,6 +76,15 @@ $component: 'reviews';
     padding-left: 126px;
     position: relative;
 
+    @media (max-width: 1024px) {
+      font-size: $font-size-base;
+      padding-left: 84px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: $font-size-sm;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -63,6 +94,10 @@ $component: 'reviews';
       width: 70px;
       height: 4px;
       background-color: #f38281;
+
+      @media (max-width: 1024px) {
+        width: 47px;
+      }
     }
   }
 
@@ -79,6 +114,16 @@ $component: 'reviews';
     cursor: pointer;
     z-index: 2;
 
+    @media (max-width: 576px) {
+      display: none;
+    }
+
     // &__img {}
   }
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
 }

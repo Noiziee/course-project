@@ -30,6 +30,7 @@
 
     @media (max-width: 1024px) {
       font-size: $font-size-base;
+      padding-bottom: 40px;
     }
 
     &::after {
@@ -41,6 +42,14 @@
       width: 170px;
       height: 4px;
       background-color: #f38281;
+
+      @media (max-width: 1024px) {
+        width: 148px;
+      }
+
+      @media (max-width: 768px) {
+        width: 134px;
+      }
     }
   }
 

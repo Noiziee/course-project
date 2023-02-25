@@ -9,7 +9,7 @@ $component: 'header';
   right: 0;
   z-index: 5;
 
-  @media (max-width: 767px) {}
+  @media (max-width: 768px) {}
 
   &__inner {
     display: flex;
@@ -29,7 +29,7 @@ $component: 'header';
       height: 18px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       width: 54px;
       height: 15px;
     }

@@ -14,7 +14,7 @@ $component: 'about';
       gap: 20px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       flex-wrap: wrap;
       gap: 0;
       margin: 16px 0 58px 0;
@@ -31,7 +31,7 @@ $component: 'about';
       width: calc(33.3333% - 20px);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       width: 100%;
       margin-bottom: 16px;
       background: none;
@@ -56,7 +56,7 @@ $component: 'about';
       opacity: 0;
       transition: opacity .2s linear;
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         opacity: 1;
         position: inherit;
         display: inline-block;
@@ -68,7 +68,7 @@ $component: 'about';
     &:hover {
       transform: translate(-15px, -15px);
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         transform: none;
       }
     }
@@ -107,7 +107,7 @@ $component: 'about';
       font-size: $font-size-sm;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       opacity: 1;
       flex-direction: row;
       align-items: flex-end;
@@ -124,7 +124,7 @@ $component: 'about';
     display: block;
     margin-bottom: 30px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       margin-bottom: 0;
       display: inline-block;
       margin: 0 31px 0 14px;

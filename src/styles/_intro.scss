@@ -13,7 +13,7 @@ $component: 'intro';
     padding-top: 120px;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding-top: 90px;
   }
 
@@ -97,6 +97,20 @@ $component: 'intro';
     transition: all .2s linear;
     margin-bottom: 115px;
 
+    @media (max-width: 1024px) {
+      padding: 10px 78px;
+      font-size: $font-size-sm;
+      margin-bottom: 78px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 10px 61px;
+    }
+
     &:hover {
       color: #e4be8d;
       background-color: $color-white;
@@ -106,13 +120,6 @@ $component: 'intro';
       border-color: #e4be8d;
     }
 
-    @media (max-width: 1024px) {
-      padding: 10px 78px;
-      font-size: $font-size-sm;
-    }
 
-    @media (max-width: 576px) {
-      padding: 10px 61px;
-    }
   }
 }

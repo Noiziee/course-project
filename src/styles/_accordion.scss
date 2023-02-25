@@ -1,7 +1,6 @@
 $component: 'accordion';
 
 .#{$component} {
-  max-width: 570px;
 
   &__item {
     border: 1px solid #c6cbcd;
@@ -19,6 +18,12 @@ $component: 'accordion';
       background-image: url('../images/service/photography-icons.svg');
       background-repeat: no-repeat;
       background-size: cover;
+
+      @media (max-width: 1024px) {
+        width: 35px;
+        height: 35px;
+        top: 21px;
+      }
     }
 
     &:nth-child(2)::before {
@@ -33,6 +38,10 @@ $component: 'accordion';
   &__item-title {
     padding-left: 82px;
 
+    @media (max-width: 1024px) {
+      padding-left: 76px;
+    }
+
   }
 
   &__item-button {
@@ -44,6 +53,15 @@ $component: 'accordion';
     text-align: left;
     padding: 33px 0;
     position: relative;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+      padding: 30px 0;
+    }
+
+    @media (max-width: 576px) {
+      font-size: $font-size-xs;
+    }
 
     // accordion arrow
     &::after {
@@ -57,6 +75,11 @@ $component: 'accordion';
       background-repeat: no-repeat;
       cursor: pointer;
       transition: all .2s linear;
+
+      @media (max-width: 1024px) {
+        width: 35px;
+        height: 35px;
+      }
     }
   }
 
@@ -70,7 +93,7 @@ $component: 'accordion';
 
   &__content {
     display: none;
-    min-height: 150px;
+    height: 150px;
     overflow-y: scroll;
     padding: 22px 54px 0 22px;
   }
