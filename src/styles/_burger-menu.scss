@@ -1,5 +1,5 @@
 .burger-menu {
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     #burger-menu__toggle {
       opacity: 0;
     }
@@ -25,7 +25,7 @@
   }
 
   &__btn {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       position: absolute;
       top: 40px;
       right: 33px;

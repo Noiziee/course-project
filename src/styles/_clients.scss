@@ -9,6 +9,10 @@ $components: 'clients';
   margin-bottom: 42px;
   position: relative;
 
+  @media (max-width: 1024px) {
+    margin-bottom: 0;
+  }
+
   &::before {
     content: '';
     position: absolute;
