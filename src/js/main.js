@@ -25,10 +25,6 @@ const swiper = new Swiper('.reviews__slider', {
   },
 });
 
-// // off scroll
-// document.querySelector('#burger-menu__toggle').addEventListener('change', function (e) {
-//   document.body.style.overflow = e.target.checked === true ? 'hidden' : '';
-// });
 
 // Burger
 

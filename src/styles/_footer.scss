@@ -163,6 +163,7 @@ $color-aqua: #95e1d3;
     padding: 16px 10px;
     font-size: $font-size-sm;
     margin-right: -5px;
+    transition: all .1s ease-in-out;
 
     @media (max-width: 1024px) {
       padding: 7px 10px;
@@ -173,6 +174,9 @@ $color-aqua: #95e1d3;
       padding: 7px 33px;
     }
 
+    &:focus {
+      box-shadow: 0px 0px 10px 2px rgba(20, 225, 162, 0.2) inset;
+    }
 
     &::placeholder {
       color: $gray-500;
