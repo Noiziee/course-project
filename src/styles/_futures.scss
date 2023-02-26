@@ -46,7 +46,7 @@ $component: 'futures';
     }
   }
 
-  &__item-number {
+  &__number {
     font-weight: 700;
     font-size: ($font-size-md * 2.7);
     margin-bottom: 25px;
@@ -56,7 +56,7 @@ $component: 'futures';
     }
   }
 
-  &__item-text {
+  &__text {
     font-weight: 500;
     font-size: $font-size-base;
 

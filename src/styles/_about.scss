@@ -40,7 +40,7 @@ $component: 'about';
     }
   }
 
-  &__col-item {
+  &__item {
     position: relative;
     transition: all .2s linear;
 
@@ -82,12 +82,12 @@ $component: 'about';
     }
   }
 
-  &__col-image {
+  &__image {
     display: block;
     max-width: 100%;
   }
 
-  &__col-text {
+  &__text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,11 +120,11 @@ $component: 'about';
     }
   }
 
-  &__col-item:hover &__col-text {
+  &__item:hover &__text {
     opacity: 1;
   }
 
-  &__col-icon {
+  &__icon {
     display: block;
     margin-bottom: 30px;
 

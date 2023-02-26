@@ -41,7 +41,7 @@ $component: 'services';
     }
   }
 
-  &__col-cover {
+  &__cover {
     display: inline-block;
     position: absolute;
     top: -35px;
@@ -52,7 +52,7 @@ $component: 'services';
     }
   }
 
-  &__col-cover img {
+  &__cover img {
     @media (max-width: 1024px) {
       width: 59px;
     }
@@ -62,7 +62,7 @@ $component: 'services';
     }
   }
 
-  &__col-title {
+  &__title {
     font-weight: 700;
     font-size: $font-size-base;
     text-transform: uppercase;
@@ -77,7 +77,7 @@ $component: 'services';
     }
   }
 
-  &__col-text {
+  &__text {
     font-size: $font-size-sm;
 
     @media (max-width: 1024px) {
