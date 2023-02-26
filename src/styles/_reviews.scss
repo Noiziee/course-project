@@ -128,12 +128,13 @@ $component: 'reviews';
     @media (max-width: 576px) {
       display: none;
     }
-
   }
-}
 
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: #000;
+  &__swiper-pagination {
+    display: none;
+
+    @media (max-width: 576px) {
+      display: block;
+    }
+  }
 }

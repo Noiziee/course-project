@@ -14,6 +14,7 @@ for (i = 0; i < acc.length; i++) {
   })
 }
 
+
 // Swiper
 const swiper = new Swiper('.reviews__slider', {
   // Optional parameters
@@ -22,6 +23,10 @@ const swiper = new Swiper('.reviews__slider', {
   navigation: {
     nextEl: '.reviews__button-right',
     prevEl: '.reviews__button-left',
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
 
