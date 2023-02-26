@@ -35,7 +35,7 @@ $component: 'accordion';
     }
   }
 
-  &__item-title {
+  &__title {
     padding-left: 82px;
 
     @media (max-width: 1024px) {
@@ -44,7 +44,7 @@ $component: 'accordion';
 
   }
 
-  &__item-button {
+  &__button {
     font-weight: 700;
     font-size: $font-size-base;
     text-transform: uppercase;
@@ -83,11 +83,11 @@ $component: 'accordion';
     }
   }
 
-  &__item-title.active {
+  &__title.active {
     border-bottom: 1px solid #c6cbcd;
   }
 
-  &__item-title.active &__item-button::after {
+  &__title.active &__button::after {
     transform: rotate(180deg);
   }
 
@@ -98,7 +98,7 @@ $component: 'accordion';
     padding: 22px 54px 0 22px;
   }
 
-  &__content-text {
+  &__text {
     font-size: $font-size-sm;
 
     p {

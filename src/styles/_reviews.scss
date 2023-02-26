@@ -39,7 +39,7 @@ $component: 'reviews';
   }
 
   // &__slide-col {}
-  &__col-avatar {
+  &__avatar {
     width: 170px;
     height: 170px;
     overflow: hidden;
@@ -51,18 +51,18 @@ $component: 'reviews';
     }
   }
 
-  &__col-photo {
+  &__photo {
     @include image;
   }
 
-  &__col-image {
+  &__image {
     @media (max-width: 768px) {
       display: none;
     }
   }
 
 
-  &__col-blockquote {
+  &__blockquote {
     max-width: 770px;
     font-weight: 500;
     font-style: italic;
@@ -79,7 +79,7 @@ $component: 'reviews';
     }
   }
 
-  &__col-cite {
+  &__cite {
     @include font-famaly-kaushan;
     font-size: $font-size-md;
     color: $color-black;

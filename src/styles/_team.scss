@@ -32,7 +32,7 @@ $component: 'team';
     }
   }
 
-  &__col-photo {
+  &__photo {
     margin-bottom: 30px;
     transition: all .2s linear;
     position: relative;
@@ -73,7 +73,7 @@ $component: 'team';
     }
   }
 
-  &__col-image {
+  &__image {
     max-width: 100%;
     display: block;
   }
@@ -99,11 +99,11 @@ $component: 'team';
     }
   }
 
-  &__col-photo:hover &__social {
+  &__photo:hover &__social {
     opacity: 1;
   }
 
-  &__col-name {
+  &__name {
     font-weight: 700;
     font-size: $font-size-base;
     margin-bottom: 40px;
@@ -113,7 +113,7 @@ $component: 'team';
     }
   }
 
-  &__col-profession {
+  &__profession {
     font-size: $font-size-sm;
 
     @media (max-width: 768px) {
@@ -121,7 +121,7 @@ $component: 'team';
     }
   }
 
-  &__social-item {
+  &__item {
     width: 42px;
     height: 42px;
     display: flex;

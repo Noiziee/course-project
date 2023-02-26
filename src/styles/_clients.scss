@@ -84,12 +84,12 @@ $components: 'clients';
     @include image;
   }
 
-  &__col-name,
-  &__col-profession {
+  &__name,
+  &__profession {
     text-transform: uppercase;
   }
 
-  &__col-name {
+  &__name {
     font-weight: 700;
     font-size: $font-size-base;
     margin-bottom: 20px;
@@ -100,7 +100,7 @@ $components: 'clients';
     }
   }
 
-  &__col-profession {
+  &__profession {
     font-size: $font-size-sm;
     position: relative;
     padding-bottom: 30px;
@@ -127,7 +127,7 @@ $components: 'clients';
     }
   }
 
-  &__col-text {
+  &__text {
     margin-top: 60px;
     font-size: $font-size-sm;
 

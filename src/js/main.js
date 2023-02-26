@@ -1,5 +1,5 @@
 // accordion
-let acc = document.getElementsByClassName('accordion__item-title')
+let acc = document.getElementsByClassName('accordion__title')
 let i
 
 for (i = 0; i < acc.length; i++) {
