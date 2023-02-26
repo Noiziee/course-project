@@ -1,0 +1,44 @@
+$component: 'blog';
+
+.#{$component} {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 10px;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
+
+
+  &__image {
+    max-width: 100%;
+  }
+
+  // &__content {}
+
+  &__text {
+    font-weight: 700;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    max-width: 270px;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-xs;
+    }
+  }
+
+  &__data {
+    font-size: $font-size-xs;
+
+    @media (max-width: 1024px) {
+      font-size: 12px;
+    }
+  }
+}

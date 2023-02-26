@@ -1,0 +1,33 @@
+$component: 'instagram';
+
+.#{$component} {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  margin-bottom: 40px;
+
+
+  &__gallery {
+    display: flex;
+    border-bottom: 1px solid $color-white;
+    border-left: 1px solid $color-white;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      border: none;
+    }
+  }
+
+  &__photo {
+
+    max-width: 100%;
+    display: block;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: $font-size-xs;
+    text-decoration: underline;
+  }
+}
