@@ -19,6 +19,7 @@ for (i = 0; i < acc.length; i++) {
 const swiper = new Swiper('.reviews__slider', {
   // Optional parameters
   slidesPerView: 1,
+  loop: true,
   // Navigation arrows
   navigation: {
     nextEl: '.reviews__button-right',

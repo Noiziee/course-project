@@ -27,17 +27,19 @@ $components: 'clients';
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 42px 0;
+    padding: 42px 0 65px 0;
     position: relative;
     z-index: 2;
     gap: 42px 50px;
 
     @media (max-width: 1024px) {
-      padding: 28px 0;
+      padding: 28px 0 50px 0;
       gap: 28px;
     }
 
-    @media (max-width: 768px) {}
+    @media (max-width: 768px) {
+      padding-bottom: 40px;
+    }
   }
 
   &__col {
