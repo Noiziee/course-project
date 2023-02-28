@@ -28,7 +28,9 @@ $component: 'blog';
     text-transform: uppercase;
     margin-bottom: 20px;
     max-width: 270px;
-
+    a {
+      color: inherit;
+    }
     @media (max-width: 1024px) {
       font-size: $font-size-xs;
     }
